@@ -6,3 +6,6 @@ Assortment of calculators
 - Celsius to Fahrenheit Converter
 - Temperture Converter (F to C to F) - Can choose which temperature you want to convert
 - Payroll Calculator with time and a half
+
+
+ignore all my js comments ( ✿˃̣̣̥᷄⌓˂̣̣̥᷅ )
