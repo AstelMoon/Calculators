@@ -40,9 +40,9 @@ function calculate() {
         const circumference = circle.calculateCircumference().toFixed(2);
 
         document.getElementById("circleResult").innerHTML = `
-            <strong>Circle with Radius ${radius}:</strong><br>
-            Area: ${area}<br>
-            Circumference: ${circumference}
+            <strong>Circle with a Radius of ${radius} in:</strong><br>
+            Area: ${area} in<br>
+            Circumference: ${circumference} in
         `;
     } else {
         document.getElementById("circleResult").innerHTML = "Please enter a valid radius.";
