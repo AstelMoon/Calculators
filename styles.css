@@ -1,0 +1,91 @@
+:root{
+    --calc-bg-color: #afd6ef;
+}
+
+
+* {
+    font-family: 'Fredoka', sans-serif;
+    font-weight: 800;
+    box-sizing: border-box; 
+    background-color: lightslategray;
+}
+
+h1, h2, p, span,
+.input,label {
+    background-color: var(--calc-bg-color) ;
+}
+
+#rectangleResult,
+#circleResult,
+#tempResult,
+#fahResult,
+#celsiusResult,
+#payrollResult,
+#circleResult>strong {
+    background-color: var(--calc-bg-color);
+}
+
+select {
+    background-color: white;
+    border: 1px solid #50b5ff;
+    border-radius: 20px;
+}
+
+select option {
+    background-color: white;
+}
+
+button {
+    background-color: #50b5ff;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: #14598b;
+}
+
+input {
+    border: 1px solid #50b5ff;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 15px;
+    margin: 2px;
+    background-color: white;
+}
+
+
+.topcalcs, .bottomcalcs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.circlecalc, .rectanglecalc, .fc_converter {
+    width: 30%; 
+    border: 25px inset #50b5ff;
+    max-width: 25%;
+    text-align: center;
+    padding: 35px;
+    margin-top: 35px;
+    background-color: var(--calc-bg-color);
+    border-radius: 20px;
+}
+
+.cel_converter, .temp_converter, .payroll_calc {
+    width: 30%; 
+    border: 25px inset #50b5ff;
+    max-width: 25%;
+    text-align: center;
+    padding: 35px;
+    margin-top: 35px;
+    background-color: var(--calc-bg-color);
+    border-radius: 20px;
+}

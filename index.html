@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculators</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap');
+      </style>
+    
+</head>
+<body>
+
+    <div class="topcalcs">
+        <div class="circlecalc"><h1>Circle Calculator </h1>
+            <p>Enter the radius of the circle:</p>
+                <input type="text" id="radiusInput">
+                <button onclick="calculate()">Calculate</button>
+            <div id="circleResult"></div>
+        </div>
+        
+        <div class="rectanglecalc">
+            <h1>Rectangle Calculator</h1>
+            <div class="input">
+                <label for="length">Length:</label>
+                <input type="number" id="length">
+            </div>
+            <div class="input">
+                <label for="width">Width:</label>
+                <input type="number" id="width">
+            </div>
+            <button id="calculateBtn">Calculate</button>
+            <div id="rectangleResult">
+                <h2>Results:</h2>
+                <p>Area: <span id="area"></span></p>
+                <p>Perimeter: <span id="perimeter"></span></p>
+            </div>
+        </div>
+
+        <div class="fc_converter">
+            <h1>Fahrenheit to Celsius Converter</h1>
+            <p>Enter the temperature in Fahrenheit:</p>
+                <input type="text" id="fahrenheitInput">
+                <button onclick="convert()">Convert</button>
+            <div class="result" id="fahResult"></div>
+        </div>
+    </div>
+
+    <div class="bottomcalcs">
+        <div class="cel_converter">
+
+            <h1>Celsius to Fahrenheit Converter</h1>
+            <p>Enter the temperature in degrees Celsius:</p>
+            <input type="text" id="celsiusInput">
+            <button onclick="convertTemperatureCtF()">Convert</button>
+        <div id="celsiusResult"></div>
+        </div>
+
+        <div class="temp_converter">
+            <h1>Temperature Converter</h1>
+            <p>Select the conversion type:</p>
+            <label for="conversionType">
+                <select id="conversionType">
+                    <option value="celsiusToFahrenheit">Celsius to Fahrenheit</option>
+                    <option value="fahrenheitToCelsius">Fahrenheit to Celsius</option>
+                </select>
+            </label>
+            <p>Enter the temperature:</p>
+            <input type="text" id="temperatureInput">
+            <button onclick="convertTemperature()">Convert</button>
+            
+            
+            <div id="tempResult"></div>
+        </div>
+
+        <div class="payroll_calc">
+            <h1>Payroll Calculator</h1>
+            <p>Enter the number of hours worked: </p>
+            <input type="text" id="hoursWorkedInput">
+            <p>Enter the hourly wage: </p>
+            <input type="text" id="hourlyWageInput">
+            <button onclick="calculatePayroll()">Calculate</button>
+            <div id="payrollResult"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
